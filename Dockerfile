@@ -13,10 +13,6 @@ RUN docker-php-ext-install pdo_mysql \
     && docker-php-ext-install intl \
     && docker-php-ext-install gd
 
-# install node
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-RUN apt-get install nodejs npm -yqq
-
 # install xdebug
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
