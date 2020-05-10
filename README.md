@@ -6,29 +6,34 @@ Installation
 ---
 
 ### Pull from Docker Hub
-```
-docker pull ocReaper/php7.2-xdebug-sonar
+
+```bash
+docker pull ocreaper/php7.2-xdebug-sonar
 ```
 
 ### Or build from GitHub
-```
-docker build -t ocReaper/php7.2-xdebug-sonar github.com/ocReaper/dockerfile-php7.2-xdebug-sonar
+
+```bash
+docker build -t ocreaper/php7.2-xdebug-sonar github.com/ocReaper/dockerfile-php7.2-xdebug-sonar
 ```
 
 ### Run image
-```
-docker run -it ocReaper/php7.2-xdebug-sonar bash
+
+```bash
+docker run -it ocreaper/php7.2-xdebug-sonar bash
 ```
 
 ### Or use as base image
+
 ```Dockerfile
-FROM ocReaper/php7.2-xdebug-sonar
+FROM ocreaper/php7.2-xdebug-sonar
 ```
 
 ### Or use it with docker-compose
+
 ```yml
 app:
-  image: ocReaper/php7.2-xdebug-sonar
+  image: ocreaper/php7.2-xdebug-sonar
   ports:
     - 9000:9000
   expose:
